@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Md. Mahedi Hassan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Md. Mahedi Hassan</a>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="research.html">Research & Publications</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Photo Gallery</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="CV_Md Mahedi Hassan.pdf" target="_blank" class="btn btn-primary">My CV <i class="fas fa-download"></i></a></li>
+                    <li>
+                        <button id="mode-toggle" class="mode-toggle-btn" aria-label="Toggle dark/light mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="gallery" class="section-padding section-alt">
+            <div class="container">
+                <h2 class="section-title">Photo Gallery</h2>
+                <p class="gallery-intro">A collection of moments from my professional journey, including achievements, interactions with students, and project milestones.</p>
+
+                <div class="gallery-categories">
+                    <div class="gallery-category-item">
+                        <h3>Professional Achievements</h3>
+                        <div class="slideshow-container" data-category-index="0">
+                            <div class="mySlides fade">
+                                <img src="images/reviewer.jpeg" alt="invited as a peer reviewer">
+                                <div class="text">Honored to be invited as a peer reviewer.</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="images/Contest.jpg" alt="Champion at a Programming Contest">
+                                <div class="text">Champion Team of the Intra-University Programming Contest (2018).</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="images/mentor1.jpeg" alt="Invited at BRACu to conduct a session.">
+                                <div class="text">Invited to BRAC University to conduct a session to brief mentors of first year advising team.</div>
+                            </div>
+                               <div class="mySlides fade">
+                                <img src="images/judge.jpg" alt="Panel Judge.">
+                                <div class="text">Panel Judge “Technopreneur Olympiad 2024”.</div>
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                        </div>
+                        <div class="dot-container">
+                            <span class="dot" onclick="currentSlide(1, 0)"></span>
+                            <span class="dot" onclick="currentSlide(2, 0)"></span>
+                            <span class="dot" onclick="currentSlide(3, 0)"></span>
+                            <span class="dot" onclick="currentSlide(4, 0)"></span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-category-item">
+                        <h3>Moments with Students</h3>
+                        <div class="slideshow-container" data-category-index="1">
+                            <div class="mySlides fade">
+                                <img src="images/student2.jpg" alt="Students Photo 1">
+                                <div class="text">Group photo with some of my graduating students.</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="images/algorithm1.jpg" alt="Students Photo 2">
+                                <div class="text">Guided my students for a competitive programming session.</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="images/student4.jpg" alt="Students Photo 3">
+                                <div class="text">Students showcasing their Big Data abd IoT projects.</div>
+                            </div>
+                               <div class="mySlides fade">
+                                <img src="images/bracu students1.jpg" alt="Students Photo 4">
+                                <div class="text">With some of my students from BRAC University.</div>
+                            </div>
+                                <div class="mySlides fade">
+                                <img src="images/student1.jpg" alt="Students Photo 5">
+                                <div class="text">With some of my students from Daffodil International University.</div>
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                        </div>
+                        <div class="dot-container">
+                            <span class="dot" onclick="currentSlide(1, 1)"></span>
+                            <span class="dot" onclick="currentSlide(2, 1)"></span>
+                            <span class="dot" onclick="currentSlide(3, 1)"></span>
+                            <span class="dot" onclick="currentSlide(4, 1)"></span>
+                            <span class="dot" onclick="currentSlide(5, 1)"></span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-category-item">
+                        <h3>Project Milestones</h3>
+                        <div class="slideshow-container" data-category-index="2">
+                            <div class="mySlides fade">
+                                <img src="images/project1.jpg" alt="Project Moment 1">
+                                <div class="text">After Demonstrating my "Smart Residential Campus" project to the judges.</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="images/sp1.jpg" alt="Project Moment 2">
+                                <div class="text">IoT Project.</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="images/thesis.png" alt="Project Moment 3">
+                                <div class="text">Thesis project on DeepFake video detection.</div>
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                        </div>
+                        <div class="dot-container">
+                            <span class="dot" onclick="currentSlide(1, 2)"></span>
+                            <span class="dot" onclick="currentSlide(2, 2)"></span>
+                            <span class="dot" onclick="currentSlide(3, 2)"></span>
+                        </div>
+                    </div>
+
+                       <div class="gallery-category-item">
+                        <h3>Graduation Ceremony</h3>
+                        <div class="slideshow-container" data-category-index="3">
+                            <div class="mySlides fade">
+                                <img src="images/convo3.jpg" alt="Photo of Convocation">
+                                <div class="text">Graduated with Highest Distinction (CGPA:3.97/4.00), with Dean's List & VC's List.</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="images/convo1.jpg" alt="Photo of Convocation">
+                                <div class="text">With friends.</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="images/convo2.jpg" alt="Photo of Convocation">
+                                <div class="text">My friends and I With our department chairperson.</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="images/convo5.jpg" alt="Photo of Convocation">
+                                <div class="text">With friends on the day of collecting convocation tokens and gown.</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="images/convo4.jpg" alt="Photo of Convocation">
+                                <div class="text">Cherishing one last time with friends at our university cafeteria.</div>
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                        </div>
+                        <div class="dot-container">
+                            <span class="dot" onclick="currentSlide(1, 3)"></span>
+                            <span class="dot" onclick="currentSlide(2, 3)"></span>
+                            <span class="dot" onclick="currentSlide(3, 3)"></span>
+                            <span class="dot" onclick="currentSlide(3, 4)"></span>
+                            <span class="dot" onclick="currentSlide(3, 5)"></span>
+                        </div>
+                    </div>
+
+                       <div class="gallery-category-item">
+                        <h3>Random moments captured</h3>
+                        <div class="slideshow-container" data-category-index="4">
+                            <div class="mySlides fade">
+                                <img src="images/judge1.jpg" alt="Moment 1">
+                                <div class="text">Technopreneur Olympiad 2024.</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="images/diu.jpg" alt="Project Moment 2">
+                                <div class="text">At DIU.</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="images/mentor3.jpg" alt="Project Moment 3">
+                                <div class="text">At BRACu.</div>
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+                        </div>
+                        <div class="dot-container">
+                            <span class="dot" onclick="currentSlide(1, 4)"></span>
+                            <span class="dot" onclick="currentSlide(2, 4)"></span>
+                            <span class="dot" onclick="currentSlide(3, 4)"></span>
+                        </div>
+                    </div>
+
+                       <div class="gallery-category-item">
+                        <h3>Some lifetime moments</h3>
+                        <div class="slideshow-container" data-category-index="5">
+                            <div class="mySlides fade">
+                                <img src="images/rs1.jpg" alt="Students Photo 1">
+                                <div class="text">At residential campus of BRAC University.</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="images/mentor2.jpeg" alt="Students Photo 2">
+                                <div class="text">Receiving tokens of appreciation from the Honorable Vice Chancellor and the Registrar of BRAC University.</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="images/bracu faculty tour.jpg" alt="Students Photo 3">
+                                <div class="text">Faculty Appreciation Tour hosted by BRAC University.</div>
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+                        </div>
+                        <div class="dot-container">
+                            <span class="dot" onclick="currentSlide(1, 5)"></span>
+                            <span class="dot" onclick="currentSlide(2, 5)"></span>
+                            <span class="dot" onclick="currentSlide(3, 5)"></span>
+                        </div>
+                    </div>
+
+
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Md. Mahedi Hassan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

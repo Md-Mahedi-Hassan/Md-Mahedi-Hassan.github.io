@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Mahedi Hassan - Lecturer & Aspiring PhD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Md. Mahedi Hassan</a>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="research.html">Research & Publications</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Photo Gallery</a></li> <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="CV_Md Mahedi Hassan.pdf" target="_blank" class="btn btn-primary">My CV <i class="fas fa-download"></i></a></li>
+                    <li>
+                        <button id="mode-toggle" class="mode-toggle-btn" aria-label="Toggle dark/light mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <img src="images/profile.png" alt="Md. Mahedi Hassan" class="profile-img">
+                <div class="hero-text">
+                    <h1>Hi, I'm Md. Mahedi Hassan</h1>
+                    <p class="typing-effect">Lecturer at Daffodil International University | Aspiring PhD in Deep Learning & AI</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/md-mahedi-hassan-1307a5187/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Md-Mahedi-Hassan" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://orcid.org/0009-0009-4612-5320" target="_blank"><i class="fab fa-orcid"></i></a>
+                        <a href="https://www.researchgate.net/profile/Md_Mahedi_Hassan" target="_blank"><i class="fab fa-researchgate"></i></a>
+                        <a href="mailto:mahedi.hassan11001@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-info">
+                        <p>
+                            Md. Mahedi Hassan is a Lecturer in the Department of Computer Science and Engineering at Daffodil International University, where he has been a full-time faculty member since January 1st, 2022. Previously, he worked as an adjunct lecturer at BRAC University in the same department from January 29th, 2021, to August 31st, 2023.
+                        </p>
+                        <p>
+                            He is an engineer with a strong background in competitive programming, which influences his passion for teaching courses like Programming and Problem Solving, Object-Oriented Programming, Data Structures, and Algorithms. Md. Mahedi Hassan is currently preparing to apply for a PhD in Deep Learning or Artificial Intelligence for Spring/Fall 2026. He is originally from Comilla and currently resides in Dhaka.
+                        </p>
+                        <p>
+                            He graduated from BRAC University with a Bachelor of Science in Computer Science and Engineering (2017-2021) and achieved a CGPA of 3.97/4.00, graduating with "Highest Distinction". He was also a recipient of the Vice Chancellor's Honor List, Dean's Honor List, and merit-based scholarships. He was also the Champion of the Intra-University Programming Contest (2018).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding section-alt">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:mahedi.hassan11001@gmail.com">mahedi.hassan11001@gmail.com</a></p>
+                        <p><i class="fas fa-phone-alt"></i> Phone: +8801301728260, +8801840020053</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Address: 41/42, GP- CHA, Wireless, Mohakhali, Dhaka 1213, Bangladesh</p>
+                        <div class="social-links-bottom">
+                            <a href="https://linkedin.com/in/md-mahedi-hassan-1307a5187/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="https://github.com/Md-Mahedi-Hassan" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                            <a href="https://orcid.org/0009-0009-4612-5320" target="_blank"><i class="fab fa-orcid fa-2x"></i></a>
+                            <a href="https://www.researchgate.net/profile/Md_Mahedi_Hassan" target="_blank"><i class="fab fa-researchgate fa-2x"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <h3>Send a Message</h3>
+                        <form action="https://formspree.io/f/mvgrpqkz" method="POST" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                        <p class="form-note">I will get back to you soon.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Md. Mahedi Hassan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
